@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="external/jquery/jquery.js"></script>
+    <script src="jquery-validation-1.16.0/dist/jquery.validate.js"></script>
+    <link rel="stylesheet" href="zadatak.css">
+    <title>Zadatak_5</title>
+</head>
+<body>
+    <div class="sve">
+        <div class="lijevo">
+            <div id="input">
+                <h1>INPUT</h1>
+            </div>
+            <div id="formadiv">
+                <form id="forma" onsubmit="return false;">
+                    <label id="proba">Broj redaka</label>
+                    <input type="text" name="br_redaka" id="br_redakaID"></input>
+                    <label>Broj stupaca</label>
+                    <input type="text" name="br_stupaca" id="br_stupacaID"></input>
+                    <input type="submit"  id="kreiraj" value="KREIRAJ TABLICU" style="cursor: pointer"></input>
+                    <input type="button"  id="rotiraj" onclick="okreni()" value="ROTIRAJ TABLICU" style="cursor: pointer"></input>
+                </form>
+            </div>
+        </div>
+        <div class="desno" id="desno">
+            <div id="output">
+                <h1>OUTPUT</h1>
+                
+            </div>
+            <div class="normal" id="tablica">
+                
+            </div>
+        </div>
+    </div>
+    <script src="./zadatak.js"></script>
+</body>
+</html>
